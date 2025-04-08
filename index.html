@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AD Blocker Tester - You Won a Prize!</title>
+  <meta name="description" content="You've been selected to win a free gift! Click now!" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="icon.png" />
+
+  <!-- Fake sketchy ad scripts (won't actually do anything) -->
+  <script src="js/tracker.js"></script>
+  <script src="js/adsense-fake.js"></script>
+  <script>var _adTrackingID = "abc123";</script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>🎉 CONGRATS! YOU'VE BEEN SELECTED 🎉</h1>
+  <p>This page is a testing ground to evaluate your ad blocker. Fake ads will appear rapidly. If you still see them, your blocker isn't doing its job.</p>
+
+  <div id="controls">
+    <button onclick="startSpam()">Start Spamming Fake Ads</button>
+    <button onclick="stopSpam()">Stop</button>
+    <label>
+      Ads per Minute:
+      <input type="number" id="rateInput" value="300" min="10" />
+    </label>
+  </div>
+
+  <div id="ad-container"></div>
+
+  <h2>Recommended Pages</h2>
+  <ul>
+    <li><a href="html/learn-more.html">Learn More</a></li>
+    <li><a href="html/recommended.html">Recommended</a></li>
+    <li><a href="html/adsites/adsite1.html">Ad Site 1</a></li>
+    <li><a href="html/adsites/adsite2.html">Ad Site 2</a></li>
+  </ul>
+
+  <!-- Main JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
